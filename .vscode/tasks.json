@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Swift",
+      "type": "shell",
+      "command": "swift prac1.swift",
+      "group": "build"
+    }
+  ]
+}
