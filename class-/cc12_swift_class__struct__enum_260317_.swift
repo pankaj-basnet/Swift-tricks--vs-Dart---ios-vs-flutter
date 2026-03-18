@@ -62,6 +62,37 @@
 // ---
 
 
+import Foundation
+
+struct Point {
+    var x: Double
+    var y: Double
+}
+
+enum NodeType {
+    case number
+    case plus
+    case text
+    case print
+    case variable
+}
+
+enum Port {
+    case left, right, input, output
+    
+}
+
+enum Value: CustomStringConvertible {
+    case number(Double)
+    case text(String)
+    
+    var description : String {
+        switch self {
+            case .number(let val): return "\(val)"
+            case .text(let val): return val
+        }
+    }
+}
 
 
 
